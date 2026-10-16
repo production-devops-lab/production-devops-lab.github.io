@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProductionDevOps · Work with me</title>
+<meta name="description" content="Real-world DevOps and SRE, explained step by step. Reviews, team workshops and sponsorships from the ProductionDevOps channel.">
+<link rel="icon" href="favicon.png">
+<meta property="og:title" content="ProductionDevOps · Work with me">
+<meta property="og:description" content="Reviews, team workshops and sponsorships from the ProductionDevOps channel.">
+<meta property="og:image" content="https://production-devops-lab.github.io/logo.png">
+<style>
+:root{
+  --bg:#0f1419; --panel:#161b22; --line:#30363d; --fg:#e6edf3; --muted:#8b949e;
+  --accent:#3fb950; --accent2:#58a6ff;
+  --mono:ui-monospace,"JetBrains Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 var(--sans)}
+a{color:var(--accent2);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(15,20,25,.92);backdrop-filter:blur(6px);z-index:5}
+header .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--fg);font-weight:700}
+.brand img{width:32px;height:32px;border-radius:8px}
+nav{margin-left:auto;display:flex;gap:18px;font-size:15px}
+nav a{color:var(--muted)}
+nav a:hover{color:var(--fg);text-decoration:none}
+.hero{padding-top:72px;padding-bottom:56px}
+.kicker{font:14px var(--mono);color:var(--accent)}
+h1{font-size:clamp(32px,5vw,50px);line-height:1.12;margin:10px 0 18px;letter-spacing:-.02em}
+h2{font-size:30px;margin:0 0 8px;letter-spacing:-.01em}
+h3{font-size:20px;margin:0 0 6px}
+.lead{font-size:19px;color:var(--muted);max-width:720px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:11px 18px;border-radius:8px;font-weight:600;border:1px solid var(--line);color:var(--fg)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#0b0f14}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+.term{margin-top:40px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px;font:15px/1.7 var(--mono);color:var(--muted);overflow-x:auto;white-space:pre}
+.term b{color:var(--accent);font-weight:400}
+.term i{color:var(--fg);font-style:normal}
+section{padding:56px 0;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 28px;max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.g4{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card .tag{font:13px var(--mono);color:var(--accent)}
+.card ul{margin:10px 0 0;padding-left:18px;color:var(--muted)}
+.card li{margin:4px 0}
+.topics{display:flex;flex-wrap:wrap;gap:10px}
+.topics span{font:14px var(--mono);border:1px solid var(--line);border-radius:999px;padding:5px 12px;color:var(--fg)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.steps div{counter-increment:s;padding-left:46px;position:relative;color:var(--muted)}
+.steps div::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--panel);border:1px solid var(--accent);color:var(--accent);display:grid;place-items:center;font:600 15px var(--mono)}
+.steps strong{color:var(--fg);display:block}
+.rules li{margin:6px 0;color:var(--muted)}
+.rules strong{color:var(--fg)}
+.contact{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:28px}
+.mail{font:600 20px var(--mono);word-break:break-all}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+@media (max-width:640px){nav{display:none}.hero{padding-top:48px;padding-bottom:40px}body{font-size:16px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#"><img src="logo.png" alt="">ProductionDevOps</a>
+    <nav>
+      <a href="#work">Work with me</a>
+      <a href="#workshops">Workshops</a>
+      <a href="#sponsors">Sponsorships</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap hero">
+  <div class="kicker">sre@lab ~/demo $ cat README.md</div>
+  <h1>Real-world DevOps and SRE,<br>explained step by step.</h1>
+  <p class="lead">ProductionDevOps is a YouTube channel about the problems that show up in production, not in tutorials: silent Bash failures, Ansible runs that skip a group of hosts, logs that vanish after a reboot, pods stuck in CrashLoopBackOff. Every command in every video is really executed, and every demo is on GitHub.</p>
+  <div class="btns">
+    <a class="btn primary" href="#work">Work with me</a>
+    <a class="btn" href="https://www.youtube.com/@production-devops">Watch on YouTube</a>
+    <a class="btn" href="https://github.com/production-devops-lab/demos">Demo files on GitHub</a>
+  </div>
+  <div class="term"><b>$</b> <i>ansible-playbook site.yml --check --diff --limit node01</i>
+# preview first, one host first, then roll out.
+# The same approach applies to everything below.</div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>What the channel covers</h2>
+    <p class="sub">Practical topics for engineers who run Linux systems for real. Clear and simple, but rigorous.</p>
+    <div class="topics">
+      <span>Linux</span><span>Bash in production</span><span>Podman &amp; containers</span><span>Kubernetes</span><span>Ansible</span><span>Logging &amp; journald</span><span>Troubleshooting</span><span>AI-assisted DevOps</span>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Work with me</h2>
+    <p class="sub">Remote, fixed-scope engagements by a senior DevOps/SRE engineer with long experience in enterprise infrastructure automation. The price is agreed before any work starts. Slots are limited each month.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="tag">review</div>
+        <h3>Code and config reviews</h3>
+        <p>A written report with every finding, why it matters, and the fix.</p>
+        <ul>
+          <li>Ansible playbooks, roles and inventories</li>
+          <li>Bash scripts used in cron, CI or monitoring</li>
+          <li>Containerfiles, Podman and Docker setups</li>
+          <li>Kubernetes manifests and Helm charts</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="tag">reliability</div>
+        <h3>Reliability checks</h3>
+        <p>A focused look at one area where incidents keep coming from.</p>
+        <ul>
+          <li>Logging: journald, logrotate, disk usage</li>
+          <li>Health checks and monitoring exit codes</li>
+          <li>Docker to rootless Podman migrations</li>
+          <li>Runbooks for the incidents you see most</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="tag">1:1</div>
+        <h3>Remote sessions</h3>
+        <p>Live sessions on a problem you are stuck on, or on a topic you want to master.</p>
+        <ul>
+          <li>Debugging a failing pipeline or deployment</li>
+          <li>Pair review of a change before production</li>
+          <li>Learning plan for Kubernetes or Ansible</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:40px">How it works</h3>
+    <div class="steps" style="margin-top:16px">
+      <div><strong>Write to me</strong>What you need, your stack, and any deadline. Never send passwords, keys or customer data.</div>
+      <div><strong>Scope and quote</strong>You get a short scope and a fixed price. Nothing starts without your OK.</div>
+      <div><strong>Delivery</strong>A written report or a live session, with the fixes explained step by step.</div>
+    </div>
+  </div>
+</section>
+
+<section id="workshops">
+  <div class="wrap">
+    <h2>Team workshops</h2>
+    <p class="sub">Hands-on, remote workshops in English (other languages on request), built like the videos: real commands, one idea at a time, and lab files your team keeps.</p>
+    <div class="grid g4">
+      <div class="card"><div class="tag">half day</div><h3>Bash for production</h3><p>Strict mode, exit codes, safe defaults, scripts that monitoring can trust.</p></div>
+      <div class="card"><div class="tag">1 day</div><h3>From Docker to rootless Podman</h3><p>Every flag of a production-ready container, SELinux labels, systemd integration.</p></div>
+      <div class="card"><div class="tag">1 day</div><h3>Ansible in the real world</h3><p>Inventories, testing the hosts that really get the change, canary rollouts.</p></div>
+      <div class="card"><div class="tag">1 day</div><h3>Kubernetes troubleshooting</h3><p>kubectl output, CrashLoopBackOff, probes and rollouts, with a repeatable routine.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sponsors">
+  <div class="wrap">
+    <h2>Sponsorships</h2>
+    <p class="sub">For companies that build tools for DevOps, SRE and platform engineers. The audience is working engineers who watch to solve real problems.</p>
+    <div class="grid">
+      <div class="card"><div class="tag">integration</div><h3>In-video segment</h3><p>A 60 to 90 second segment where the tool is used for real, inside the demo.</p></div>
+      <div class="card"><div class="tag">dedicated</div><h3>Dedicated video</h3><p>A full episode built around a real problem your tool solves, with a public demo repo.</p></div>
+      <div class="card"><div class="tag">description</div><h3>Description link</h3><p>A link and one line of text at the top of the description of a video series.</p></div>
+    </div>
+    <h3 style="margin-top:40px">Ground rules</h3>
+    <ul class="rules">
+      <li><strong>Only tools I have tested.</strong> I try the product first, and I can say no.</li>
+      <li><strong>Always disclosed.</strong> Sponsored content is marked as a paid promotion on YouTube and said out loud in the video.</li>
+      <li><strong>Editorial control stays here.</strong> You review facts about your product; the opinion is mine.</li>
+      <li><strong>No claims I cannot verify</strong> on screen.</li>
+    </ul>
+    <p class="sub" style="margin-top:20px">Channel statistics and available dates are sent on request.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <h2>Contact</h2>
+      <p class="sub" style="margin-bottom:14px">Business enquiries, reviews, workshops and sponsorships:</p>
+      <a class="mail" href="mailto:production-devops@proton.me?subject=Work%20with%20ProductionDevOps">production-devops@proton.me</a>
+      <p class="sub" style="margin:14px 0 0">Please include what you need, your stack, and your timeline. Replies usually within 2 working days.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© ProductionDevOps</span>
+    <span><a href="https://www.youtube.com/@production-devops">YouTube</a> · <a href="https://github.com/production-devops-lab">GitHub</a></span>
+  </div>
+</footer>
+</body>
+</html>
